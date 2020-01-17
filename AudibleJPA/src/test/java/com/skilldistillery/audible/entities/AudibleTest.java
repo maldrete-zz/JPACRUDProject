@@ -10,6 +10,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class AudibleTest {
@@ -42,8 +43,10 @@ class AudibleTest {
 	}
 
 	@Test
+	@DisplayName("audible entity mapping")
 	void test() {
-		fail("Not yet implemented");
+		assertNotNull(audible);
+		assertEquals("Can't Hurt Me: Master Your Mind and Defy the Odds", audible.getName());
 	}
 
 }
