@@ -1,12 +1,6 @@
 package com.skilldistillery.audible.entities;
 
 import static org.junit.jupiter.api.Assertions.*;
-
-import java.sql.Date;
-import java.sql.Time;
-import java.text.DateFormat;
-
-import javax.persistence.Column;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -66,8 +60,8 @@ class AudibleTest {
 		assertEquals("08:44:00", audible.getLength().toString());
 		assertEquals("2016-11-15", audible.getReleaseDate().toString());
 		assertEquals(" Bios & Memoirs, Celebrities", audible.getCategories());
-		//assertEquals("", audible.getDesciption());
-		//assertEquals("", audible.getBookImage());
+		// assertEquals("", audible.getDesciption());
+		// assertEquals("", audible.getBookImage());
 	}
 
 }

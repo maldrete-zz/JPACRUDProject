@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.link {
+	color: #FF0000;
+} /* CSS link color (red) */
+.link:hover {
+	color: #00FF00;
+} /* CSS link hover (green) */
+
+body {
+	background-image: url("./image/bg-masthead.jpg");
+	position: relative;
+	min-height: 100vh;
+	background-size: cover;
+	position: relative;
+}
+
+body:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.75);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 1;
+	justify-content: space-around;
+	height: 70vh;
+}
+
+p {
+	line-height: 2.5rem;
+	letter-spacing: .8rem;
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 1),
+		rgba(255, 255, 255, 0.5));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+h2 {
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+	letter-spacing: .8rem;
+	background: -webkit-linear-gradient(rgba(255, 255, 255, .9),
+		rgba(255, 255, 255, 0));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	text-align: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.lower-body {
+	background-color: DarkSlateGrey;
+}
