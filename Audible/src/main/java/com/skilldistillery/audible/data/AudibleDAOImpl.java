@@ -28,6 +28,7 @@ public class AudibleDAOImpl implements AudibleDAO {
 		String jpql = "SELECT a FROM Audible a";
 		List<Audible> allAudibles = em.createQuery(jpql, Audible.class).getResultList();
 		for (Audible audible : allAudibles) {
+			System.out.println("Hello im in here");
 			System.out.println(audible);
 		}
 		return allAudibles;

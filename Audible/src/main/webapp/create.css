@@ -6,9 +6,10 @@
 .link:hover {
   color: #00ff00;
 } /* CSS link hover (green) */
+
 body {
   background-image: url("./image/bg-masthead.jpg");
-  background-attachment: fixed;
+  position: relative;
   min-height: 100vh;
   background-size: cover;
   position: relative;
@@ -20,18 +21,6 @@ body:before {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.05);
-}
-
-#cardStyle {
-  max-width: 45em;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: 100px;
-}
-
-input {
-  width: 400px;
 }
 
 label {

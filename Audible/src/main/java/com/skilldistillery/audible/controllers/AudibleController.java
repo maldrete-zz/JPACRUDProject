@@ -19,6 +19,7 @@ public class AudibleController {
 	@RequestMapping(path = {"/", "home.do"}, method = RequestMethod.GET )
 	public String home(Model model) {
 		model.addAttribute("audibles", dao.findAll());
+		System.out.println(dao.findAll());
 		return "home";
 	}
 	

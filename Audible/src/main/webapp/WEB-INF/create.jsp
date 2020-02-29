@@ -5,6 +5,7 @@ pageEncoding="UTF-8"%>
   <head>
     <meta charset="UTF-8" />
     <title>Create Page</title>
+    <link rel="stylesheet" href="mainStyle.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -13,10 +14,10 @@ pageEncoding="UTF-8"%>
     />
   </head>
   <body>
-    <div class="card text-white bg-dark mb-3" style="max-width: 45em;display: flex;justify-content: center;margin: auto;margin-top: 100px;">
-      <div class="card-header">Header</div>
+    <div class="card text-white bg-dark mb-3" id="cardStyle">
+      <div class="card-header">Create</div>
       <div class="card-body">
-        <h5 class="card-title">Dark card title</h5>
+        <h5 class="card-title">Audible Content</h5>
         <table>
           <form action="createAudible.do" method="GET">
           <tr>
@@ -53,13 +54,13 @@ pageEncoding="UTF-8"%>
           </tr>
           <tr>
             <td>
-              Description:
+              Description
               <input type="text" placeholder="description" name="description" />
             </td>
           </tr>
           <tr>
             <td>
-              Book Image URL:
+              Book Image URL
               <input type="text" placeholder="URL" name="bookImage" />
             </td>
           </tr>
